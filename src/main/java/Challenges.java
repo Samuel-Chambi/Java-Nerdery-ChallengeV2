@@ -2,6 +2,8 @@
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /* (C)2024 */
 public class Challenges {
@@ -22,26 +24,12 @@ public class Challenges {
 
     public String readableTime(Integer seconds) {
         // YOUR CODE HERE...
-        Integer hours = seconds / 3600;
+        String hh = (seconds / 3600 > 9) ? String.valueOf(seconds / 3600) : '0' + String.valueOf(seconds / 3600);
         seconds %= 3600;
-        Integer minutes = seconds / 60;
+        String mm = (seconds / 60 > 9)   ? String.valueOf(seconds / 60) : '0' + String.valueOf(seconds / 60);
         seconds %= 60;
-        StringBuilder hour = new StringBuilder();
-        if (hours < 10) {
-            hour.append('0');
-        }
-        hour.append(hours);
-        hour.append(':');
-        if (minutes < 10) {
-            hour.append('0');
-        }
-        hour.append(minutes);
-        hour.append(':');
-        if (seconds < 10) {
-            hour.append('0');
-        }
-        hour.append(seconds);
-        return hour.toString();
+        String ss = String.valueOf(seconds);
+        return String.join(":", hh, mm, ss);
     }
 
     /* *****
