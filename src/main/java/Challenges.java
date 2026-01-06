@@ -1,5 +1,6 @@
 /* (C)2024 */
-import java.util.Collections;
+import java.math.BigInteger;
+import java.util.ArrayList;
 import java.util.List;
 
 /* (C)2024 */
@@ -21,9 +22,27 @@ public class Challenges {
 
     public String readableTime(Integer seconds) {
         // YOUR CODE HERE...
-        return "";
+        Integer hours = seconds / 3600;
+        seconds %= 3600;
+        Integer minutes = seconds / 60;
+        seconds %= 60;
+        StringBuilder hour = new StringBuilder();
+        if (hours < 10) {
+            hour.append('0');
+        }
+        hour.append(hours);
+        hour.append(':');
+        if (minutes < 10) {
+            hour.append('0');
+        }
+        hour.append(minutes);
+        hour.append(':');
+        if (seconds < 10) {
+            hour.append('0');
+        }
+        hour.append(seconds);
+        return hour.toString();
     }
-    ;
 
     /* *****
     Challenge 2
@@ -44,11 +63,14 @@ public class Challenges {
 
     public String[] circularArray(int index) {
         String[] COUNTRY_NAMES = {"Germany", "Norway", "Island", "Japan", "Israel"};
-        // YOUR CODE HERE...
+        index %= COUNTRY_NAMES.length;
+        String[] AUX_LIST = new String[5];
+        for(int i = 0; i < COUNTRY_NAMES.length; i ++) AUX_LIST[i] = COUNTRY_NAMES[i];
+        for(int i = index; i < COUNTRY_NAMES.length ; i++) COUNTRY_NAMES[i - index] = COUNTRY_NAMES[i];
+        int offset = COUNTRY_NAMES.length - index;
+        for(int i = 0; i < index; i++) COUNTRY_NAMES[offset + i] = AUX_LIST[i];
         return COUNTRY_NAMES;
     }
-    ;
-
     /* *****
     Challenge 3
 
@@ -70,10 +92,19 @@ public class Challenges {
     ***** */
 
     public String ownPower(int number, int lastDigits) {
-        // YOUR CODE HERE...
-        return "";
+        BigInteger accumulator = BigInteger.ZERO;
+        for(int i = 1; i <= number; i++) {
+            BigInteger adds = BigInteger.valueOf(i).pow(i);
+            accumulator = accumulator.add(adds);
+        }
+        StringBuilder result = new StringBuilder();
+        for(int i = 0 ; i < lastDigits; i++) {
+            result.append(accumulator.mod(BigInteger.TEN));
+            accumulator = accumulator.divide(BigInteger.TEN);
+        }
+        result.reverse();
+        return result.toString();
     }
-    ;
 
     /* *****
     Challenge 4
@@ -93,8 +124,14 @@ public class Challenges {
     ***** */
 
     public Integer digitSum(int n) {
-        // YOUR CODE HERE...
-        return 1;
+        BigInteger accumulator = BigInteger.ONE;
+        for(int i = 1; i <= n; i++) accumulator = accumulator.multiply(BigInteger.valueOf(i));
+        int result = 0;
+        while(!accumulator.equals(BigInteger.ZERO)) {
+            result += accumulator.mod(BigInteger.TEN).intValue();
+            accumulator = accumulator.divide(BigInteger.TEN);
+        }
+        return result;
     }
 
     /**
@@ -107,8 +144,13 @@ public class Challenges {
      * @param ascivalues  hand, player2 hand
      */
     public String decrypt(List<Integer> ascivalues) {
-        // YOUR CODE HERE...
-        return "";
+        StringBuilder result = new StringBuilder();
+        int accumulator = 0;
+        for(Integer i : ascivalues){
+            accumulator += i;
+            result.append((char) accumulator);
+        }
+        return result.toString();
     }
 
     /**
@@ -121,7 +163,13 @@ public class Challenges {
      * @param text  hand, player2 hand
      */
     public List<Integer> encrypt(String text) {
-        // YOUR CODE HERE...
-        return Collections.emptyList();
+        List<Integer> result = new ArrayList<>();
+        int prev = 0;
+        for(int i = 0 ; i < text.length(); i++){
+            int val = text.charAt(i);
+            result.add(val - prev);
+            prev = val;
+        }
+        return result;
     }
 }
