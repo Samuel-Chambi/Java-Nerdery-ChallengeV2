@@ -2,8 +2,6 @@
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /* (C)2024 */
 public class Challenges {
@@ -24,10 +22,13 @@ public class Challenges {
 
     public String readableTime(Integer seconds) {
         // YOUR CODE HERE...
+        // For this, firstly I get the number of hours from the seconds dividing it by 3600
         String hh = (seconds / 3600 > 9) ? String.valueOf(seconds / 3600) : '0' + String.valueOf(seconds / 3600);
         seconds %= 3600;
+        // So, the rest after the division must belong to the minutes or seconds section, for get the number of minutes apply the same operation but now dividing by 60
         String mm = (seconds / 60 > 9)   ? String.valueOf(seconds / 60) : '0' + String.valueOf(seconds / 60);
         seconds %= 60;
+        // At the end, the rest after both operations belongs to the number of seconds.
         String ss = String.valueOf(seconds);
         return String.join(":", hh, mm, ss);
     }
@@ -80,6 +81,11 @@ public class Challenges {
     ***** */
 
     public String ownPower(int number, int lastDigits) {
+        /* 
+            One 'critical' observation for this problem is that for a number value up to 15 is already a really big value.
+            That not fits on Long limits (until around 10^18)
+            So for this, I decided to use the BigInteger class instead.
+        */
         BigInteger accumulator = BigInteger.ZERO;
         for(int i = 1; i <= number; i++) {
             BigInteger adds = BigInteger.valueOf(i).pow(i);
@@ -112,6 +118,7 @@ public class Challenges {
     ***** */
 
     public Integer digitSum(int n) {
+        // As the previous challenge, 
         BigInteger accumulator = BigInteger.ONE;
         for(int i = 1; i <= n; i++) accumulator = accumulator.multiply(BigInteger.valueOf(i));
         int result = 0;
