@@ -54,10 +54,13 @@ public class Challenges {
         String[] COUNTRY_NAMES = {"Germany", "Norway", "Island", "Japan", "Israel"};
         index %= COUNTRY_NAMES.length;
         String[] AUX_LIST = new String[5];
-        for(int i = 0; i < COUNTRY_NAMES.length; i ++) AUX_LIST[i] = COUNTRY_NAMES[i];
-        for(int i = index; i < COUNTRY_NAMES.length ; i++) COUNTRY_NAMES[i - index] = COUNTRY_NAMES[i];
-        int offset = COUNTRY_NAMES.length - index;
-        for(int i = 0; i < index; i++) COUNTRY_NAMES[offset + i] = AUX_LIST[i];
+        System.arraycopy(COUNTRY_NAMES , 0 , AUX_LIST , 0 , 5);
+        /*
+        * For this challenge, I use the index argument as an offset between two pointers.
+        * The first one (in AUX_LIST), will init in the index position while the second (in COUNTRY_NAMES) will init in position 0.
+        * For manage the overflow in the first pointer, I use the modular operator to simulate the circular road.
+        * */
+        for(int i = 0; i < COUNTRY_NAMES.length; i++) COUNTRY_NAMES[i] = AUX_LIST[(i + index) % COUNTRY_NAMES.length];
         return COUNTRY_NAMES;
     }
     /* *****
@@ -82,7 +85,7 @@ public class Challenges {
 
     public String ownPower(int number, int lastDigits) {
         /* 
-            One 'critical' observation for this problem is that for a number value up to 15 is already a really big value.
+            One 'critical' observation for this problem is that for a number value up to 15 is already a huge value.
             That not fits on Long limits (until around 10^18)
             So for this, I decided to use the BigInteger class instead.
         */
@@ -118,7 +121,7 @@ public class Challenges {
     ***** */
 
     public Integer digitSum(int n) {
-        // As the previous challenge, 
+        // As the previous challenge, here the function will work with big values also.
         BigInteger accumulator = BigInteger.ONE;
         for(int i = 1; i <= n; i++) accumulator = accumulator.multiply(BigInteger.valueOf(i));
         int result = 0;
@@ -139,11 +142,12 @@ public class Challenges {
      * @param ascivalues  hand, player2 hand
      */
     public String decrypt(List<Integer> ascivalues) {
+        // As the statement says, each value depends on directly from the previous value, so for manage that, I use an auxiliary variable called 'accumulator'
         StringBuilder result = new StringBuilder();
         int accumulator = 0;
         for(Integer i : ascivalues){
             accumulator += i;
-            result.append((char) accumulator);
+            result.append((char) accumulator); // Here, 'accumulator' is cast as a char, for its respective ASCII value
         }
         return result.toString();
     }
@@ -159,9 +163,10 @@ public class Challenges {
      */
     public List<Integer> encrypt(String text) {
         List<Integer> result = new ArrayList<>();
+        // The idea is similar to the last one but for this I do not accumulate the sum, only store the last ASCII value for the next use.
         int prev = 0;
         for(int i = 0 ; i < text.length(); i++){
-            int val = text.charAt(i);
+            int val = text.charAt(i); // Declaring 'val' in this scope, automatically cast the ASCII value to int.
             result.add(val - prev);
             prev = val;
         }
