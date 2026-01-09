@@ -1,0 +1,58 @@
+============================================================
+GENERAL REPORT
+============================================================
+
+[ Air temp ]
+    Avg. value         :        13.82
+    Max. value         :        45.30
+    Min. value         :        -0.60
+
+[ Atmospheric pressure ]
+    Avg. value         :       101.12
+    Max. value         :       103.73
+    Min. value         :         0.00
+
+[ Gust speed ]
+    Avg. value         :       -13.27
+    Max. value         :        24.01
+    Min. value         :     -9990.00
+
+[ Precipitation ]
+    Avg. value         :         0.01
+    Max. value         :        35.34
+    Min. value         :         0.00
+
+[ Relative humidity ]
+    Avg. value         :        74.37
+    Max. value         :       100.00
+    Min. value         :         0.00
+
+[ Solar ]
+    Avg. value         :       115.20
+    Max. value         :      1119.00
+    Min. value         :         0.00
+
+[ Strike distance ]
+    Avg. value         :         0.09
+    Max. value         :        40.00
+    Min. value         :         0.00
+
+[ Strikes ]
+    Avg. value         :         0.04
+    Max. value         :       777.00
+    Min. value         :         0.00
+
+[ Vapour pressure ]
+    Avg. value         :         1.17
+    Max. value         :         2.88
+    Min. value         :         0.00
+
+[ Wind direction ]
+    Avg. value         :       211.16
+    Max. value         :       360.00
+    Min. value         :     -9990.00
+
+[ Wind speed ]
+    Avg. value         :       -15.47
+    Max. value         :        13.04
+    Min. value         :     -9990.00

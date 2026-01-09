@@ -1,0 +1,2853 @@
+============================================================
+REPORT GROUP BY DAY
+============================================================
+
+[ 2021-11-13 Saturday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        12.00
+    	Max. value         :        13.60
+    	Min. value         :         8.00
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       100.50
+    	Max. value         :       100.68
+    	Min. value         :       100.41
+
+	[[ Gust speed ]]
+    	Avg. value         :        10.04
+    	Max. value         :        13.55
+    	Min. value         :         2.51
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.02
+    	Max. value         :         0.07
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        69.67
+    	Max. value         :        81.00
+    	Min. value         :        61.00
+
+	[[ Solar ]]
+    	Avg. value         :       336.42
+    	Max. value         :       639.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         0.97
+    	Max. value         :         1.12
+    	Min. value         :         0.85
+
+	[[ Wind direction ]]
+    	Avg. value         :       201.83
+    	Max. value         :       284.90
+    	Min. value         :       174.10
+
+	[[ Wind speed ]]
+    	Avg. value         :         6.07
+    	Max. value         :         8.22
+    	Min. value         :         1.84
+
+[ 2021-11-12 Friday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        12.22
+    	Max. value         :        13.40
+    	Min. value         :        10.20
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       100.03
+    	Max. value         :       100.39
+    	Min. value         :        99.71
+
+	[[ Gust speed ]]
+    	Avg. value         :         9.40
+    	Max. value         :        15.16
+    	Min. value         :         6.39
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.04
+    	Max. value         :         0.10
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        90.30
+    	Max. value         :        99.00
+    	Min. value         :        79.00
+
+	[[ Solar ]]
+    	Avg. value         :       120.30
+    	Max. value         :       567.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.28
+    	Max. value         :         1.48
+    	Min. value         :         1.14
+
+	[[ Wind direction ]]
+    	Avg. value         :       150.54
+    	Max. value         :       188.50
+    	Min. value         :       108.30
+
+	[[ Wind speed ]]
+    	Avg. value         :         4.86
+    	Max. value         :         8.76
+    	Min. value         :         3.17
+
+[ 2021-11-11 Thursday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        13.14
+    	Max. value         :        14.60
+    	Min. value         :        11.40
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       100.22
+    	Max. value         :       100.83
+    	Min. value         :        99.79
+
+	[[ Gust speed ]]
+    	Avg. value         :         8.23
+    	Max. value         :        11.57
+    	Min. value         :         4.09
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.01
+    	Max. value         :         0.19
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        77.28
+    	Max. value         :        93.00
+    	Min. value         :        62.00
+
+	[[ Solar ]]
+    	Avg. value         :       201.24
+    	Max. value         :       984.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.16
+    	Max. value         :         1.29
+    	Min. value         :         1.01
+
+	[[ Wind direction ]]
+    	Avg. value         :       139.80
+    	Max. value         :       156.10
+    	Min. value         :        97.30
+
+	[[ Wind speed ]]
+    	Avg. value         :         4.11
+    	Max. value         :         5.73
+    	Min. value         :         1.70
+
+[ 2021-11-10 Wednesday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        11.64
+    	Max. value         :        14.20
+    	Min. value         :         7.60
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       100.80
+    	Max. value         :       100.96
+    	Min. value         :       100.66
+
+	[[ Gust speed ]]
+    	Avg. value         :         7.19
+    	Max. value         :        11.96
+    	Min. value         :         3.89
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        75.82
+    	Max. value         :        89.00
+    	Min. value         :        62.00
+
+	[[ Solar ]]
+    	Avg. value         :       287.68
+    	Max. value         :       967.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.03
+    	Max. value         :         1.18
+    	Min. value         :         0.92
+
+	[[ Wind direction ]]
+    	Avg. value         :       208.33
+    	Max. value         :       278.20
+    	Min. value         :       149.40
+
+	[[ Wind speed ]]
+    	Avg. value         :         4.28
+    	Max. value         :         7.13
+    	Min. value         :         2.11
+
+[ 2021-11-09 Tuesday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        13.70
+    	Max. value         :        19.90
+    	Min. value         :        10.10
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       100.95
+    	Max. value         :       101.04
+    	Min. value         :       100.84
+
+	[[ Gust speed ]]
+    	Avg. value         :         4.44
+    	Max. value         :         7.38
+    	Min. value         :         1.74
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.05
+    	Max. value         :         0.27
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        79.28
+    	Max. value         :        98.00
+    	Min. value         :        48.00
+
+	[[ Solar ]]
+    	Avg. value         :       149.29
+    	Max. value         :       946.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.21
+    	Max. value         :         1.30
+    	Min. value         :         1.10
+
+	[[ Wind direction ]]
+    	Avg. value         :       169.85
+    	Max. value         :       287.30
+    	Min. value         :         4.80
+
+	[[ Wind speed ]]
+    	Avg. value         :         2.48
+    	Max. value         :         4.12
+    	Min. value         :         0.72
+
+[ 2021-11-08 Monday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        12.12
+    	Max. value         :        18.00
+    	Min. value         :         7.40
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       101.13
+    	Max. value         :       101.23
+    	Min. value         :       101.02
+
+	[[ Gust speed ]]
+    	Avg. value         :         2.77
+    	Max. value         :         8.39
+    	Min. value         :         0.64
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        75.46
+    	Max. value         :        93.00
+    	Min. value         :        54.00
+
+	[[ Solar ]]
+    	Avg. value         :       191.23
+    	Max. value         :       747.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.06
+    	Max. value         :         1.46
+    	Min. value         :         0.91
+
+	[[ Wind direction ]]
+    	Avg. value         :       215.13
+    	Max. value         :       350.20
+    	Min. value         :        11.40
+
+	[[ Wind speed ]]
+    	Avg. value         :         1.50
+    	Max. value         :         4.62
+    	Min. value         :         0.33
+
+[ 2021-11-07 Sunday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        12.37
+    	Max. value         :        14.30
+    	Min. value         :        10.60
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       100.92
+    	Max. value         :       101.12
+    	Min. value         :       100.78
+
+	[[ Gust speed ]]
+    	Avg. value         :         4.47
+    	Max. value         :         8.99
+    	Min. value         :         1.88
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        70.20
+    	Max. value         :        80.00
+    	Min. value         :        58.00
+
+	[[ Solar ]]
+    	Avg. value         :       176.04
+    	Max. value         :       787.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.01
+    	Max. value         :         1.11
+    	Min. value         :         0.91
+
+	[[ Wind direction ]]
+    	Avg. value         :       187.89
+    	Max. value         :       253.80
+    	Min. value         :       134.60
+
+	[[ Wind speed ]]
+    	Avg. value         :         2.45
+    	Max. value         :         3.82
+    	Min. value         :         1.00
+
+[ 2021-11-06 Saturday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        16.53
+    	Max. value         :        27.20
+    	Min. value         :        11.80
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       100.57
+    	Max. value         :       100.93
+    	Min. value         :       100.16
+
+	[[ Gust speed ]]
+    	Avg. value         :         7.06
+    	Max. value         :        11.63
+    	Min. value         :         1.05
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.14
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        82.70
+    	Max. value         :        97.00
+    	Min. value         :        59.00
+
+	[[ Solar ]]
+    	Avg. value         :       105.33
+    	Max. value         :       821.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.54
+    	Max. value         :        13.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.26
+    	Max. value         :         8.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.57
+    	Max. value         :         2.19
+    	Min. value         :         1.07
+
+	[[ Wind direction ]]
+    	Avg. value         :       190.15
+    	Max. value         :       346.80
+    	Min. value         :        10.50
+
+	[[ Wind speed ]]
+    	Avg. value         :         3.83
+    	Max. value         :         6.44
+    	Min. value         :         0.70
+
+[ 2021-11-05 Friday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        16.10
+    	Max. value         :        23.40
+    	Min. value         :        13.20
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       101.14
+    	Max. value         :       101.96
+    	Min. value         :       100.58
+
+	[[ Gust speed ]]
+    	Avg. value         :         3.62
+    	Max. value         :         7.16
+    	Min. value         :         0.35
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        93.04
+    	Max. value         :        98.00
+    	Min. value         :        74.00
+
+	[[ Solar ]]
+    	Avg. value         :       182.02
+    	Max. value         :       710.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.70
+    	Max. value         :         2.13
+    	Min. value         :         1.47
+
+	[[ Wind direction ]]
+    	Avg. value         :       119.45
+    	Max. value         :       353.10
+    	Min. value         :         2.20
+
+	[[ Wind speed ]]
+    	Avg. value         :         1.72
+    	Max. value         :         3.39
+    	Min. value         :         0.16
+
+[ 2021-11-04 Thursday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        14.64
+    	Max. value         :        15.60
+    	Min. value         :        12.90
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       102.32
+    	Max. value         :       102.53
+    	Min. value         :       102.00
+
+	[[ Gust speed ]]
+    	Avg. value         :         6.24
+    	Max. value         :        10.33
+    	Min. value         :         2.44
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.03
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        84.33
+    	Max. value         :        94.00
+    	Min. value         :        75.00
+
+	[[ Solar ]]
+    	Avg. value         :       298.07
+    	Max. value         :       980.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.40
+    	Max. value         :         1.65
+    	Min. value         :         1.25
+
+	[[ Wind direction ]]
+    	Avg. value         :       137.84
+    	Max. value         :       166.90
+    	Min. value         :        92.20
+
+	[[ Wind speed ]]
+    	Avg. value         :         3.22
+    	Max. value         :         5.96
+    	Min. value         :         1.08
+
+[ 2021-11-03 Wednesday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        15.69
+    	Max. value         :        20.90
+    	Min. value         :        12.50
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       101.86
+    	Max. value         :       102.51
+    	Min. value         :       101.27
+
+	[[ Gust speed ]]
+    	Avg. value         :         5.04
+    	Max. value         :        10.24
+    	Min. value         :         1.78
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.03
+    	Max. value         :         0.14
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        89.11
+    	Max. value         :        99.00
+    	Min. value         :        69.00
+
+	[[ Solar ]]
+    	Avg. value         :       106.67
+    	Max. value         :       735.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.30
+    	Max. value         :        17.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.02
+    	Max. value         :         1.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.60
+    	Max. value         :         1.91
+    	Min. value         :         1.22
+
+	[[ Wind direction ]]
+    	Avg. value         :       139.07
+    	Max. value         :       358.40
+    	Min. value         :         2.30
+
+	[[ Wind speed ]]
+    	Avg. value         :         2.57
+    	Max. value         :         5.61
+    	Min. value         :         0.80
+
+[ 2021-11-02 Tuesday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        23.47
+    	Max. value         :        29.60
+    	Min. value         :        19.60
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       101.43
+    	Max. value         :       102.03
+    	Min. value         :       101.17
+
+	[[ Gust speed ]]
+    	Avg. value         :         4.47
+    	Max. value         :         7.66
+    	Min. value         :         2.07
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        56.46
+    	Max. value         :        77.00
+    	Min. value         :        34.00
+
+	[[ Solar ]]
+    	Avg. value         :       259.60
+    	Max. value         :       933.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.59
+    	Max. value         :         1.76
+    	Min. value         :         1.39
+
+	[[ Wind direction ]]
+    	Avg. value         :        35.86
+    	Max. value         :       358.70
+    	Min. value         :         3.30
+
+	[[ Wind speed ]]
+    	Avg. value         :         1.66
+    	Max. value         :         2.93
+    	Min. value         :         0.75
+
+[ 2021-11-01 Monday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        13.78
+    	Max. value         :        20.00
+    	Min. value         :         8.80
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       102.14
+    	Max. value         :       102.31
+    	Min. value         :       101.89
+
+	[[ Gust speed ]]
+    	Avg. value         :         3.60
+    	Max. value         :         7.48
+    	Min. value         :         0.66
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.02
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        86.84
+    	Max. value         :       100.00
+    	Min. value         :        61.00
+
+	[[ Solar ]]
+    	Avg. value         :       265.77
+    	Max. value         :       933.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.37
+    	Max. value         :         1.79
+    	Min. value         :         1.11
+
+	[[ Wind direction ]]
+    	Avg. value         :       168.56
+    	Max. value         :       356.60
+    	Min. value         :         0.50
+
+	[[ Wind speed ]]
+    	Avg. value         :         1.85
+    	Max. value         :         4.03
+    	Min. value         :         0.35
+
+[ 2021-10-31 Sunday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        12.96
+    	Max. value         :        18.10
+    	Min. value         :         6.90
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       102.22
+    	Max. value         :       102.42
+    	Min. value         :       102.09
+
+	[[ Gust speed ]]
+    	Avg. value         :         3.72
+    	Max. value         :         8.05
+    	Min. value         :         0.84
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        76.88
+    	Max. value         :        99.00
+    	Min. value         :        56.00
+
+	[[ Solar ]]
+    	Avg. value         :       317.58
+    	Max. value         :       991.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.13
+    	Max. value         :         1.44
+    	Min. value         :         0.92
+
+	[[ Wind direction ]]
+    	Avg. value         :       206.97
+    	Max. value         :       285.40
+    	Min. value         :       112.10
+
+	[[ Wind speed ]]
+    	Avg. value         :         1.90
+    	Max. value         :         4.52
+    	Min. value         :         0.60
+
+[ 2021-10-30 Saturday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        10.11
+    	Max. value         :        14.90
+    	Min. value         :         6.50
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       102.20
+    	Max. value         :       102.44
+    	Min. value         :       101.89
+
+	[[ Gust speed ]]
+    	Avg. value         :         5.02
+    	Max. value         :        14.41
+    	Min. value         :         1.09
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.07
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        80.43
+    	Max. value         :        95.00
+    	Min. value         :        65.00
+
+	[[ Solar ]]
+    	Avg. value         :       185.28
+    	Max. value         :       784.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         0.99
+    	Max. value         :         1.17
+    	Min. value         :         0.87
+
+	[[ Wind direction ]]
+    	Avg. value         :       253.47
+    	Max. value         :       344.30
+    	Min. value         :       164.20
+
+	[[ Wind speed ]]
+    	Avg. value         :         2.77
+    	Max. value         :         6.80
+    	Min. value         :         0.33
+
+[ 2021-10-29 Friday ]
+
+	[[ Air temp ]]
+    	Avg. value         :         9.77
+    	Max. value         :        14.10
+    	Min. value         :         5.30
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       101.42
+    	Max. value         :       101.94
+    	Min. value         :       100.42
+
+	[[ Gust speed ]]
+    	Avg. value         :         8.06
+    	Max. value         :        18.42
+    	Min. value         :         2.65
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        73.27
+    	Max. value         :        87.00
+    	Min. value         :        59.00
+
+	[[ Solar ]]
+    	Avg. value         :       227.90
+    	Max. value         :       992.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         0.88
+    	Max. value         :         1.08
+    	Min. value         :         0.77
+
+	[[ Wind direction ]]
+    	Avg. value         :       240.33
+    	Max. value         :       285.00
+    	Min. value         :       178.80
+
+	[[ Wind speed ]]
+    	Avg. value         :         4.74
+    	Max. value         :         9.73
+    	Min. value         :         1.57
+
+[ 2021-10-28 Thursday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        15.57
+    	Max. value         :        23.50
+    	Min. value         :        11.60
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :        99.70
+    	Max. value         :       100.71
+    	Min. value         :        98.43
+
+	[[ Gust speed ]]
+    	Avg. value         :     -2768.43
+    	Max. value         :        24.01
+    	Min. value         :     -9990.00
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.14
+    	Max. value         :         3.38
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        86.48
+    	Max. value         :        97.00
+    	Min. value         :        54.00
+
+	[[ Solar ]]
+    	Avg. value         :       145.20
+    	Max. value         :       911.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         1.78
+    	Max. value         :        27.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         2.96
+    	Max. value         :        52.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.53
+    	Max. value         :         1.88
+    	Min. value         :         1.03
+
+	[[ Wind direction ]]
+    	Avg. value         :     -2634.30
+    	Max. value         :       341.20
+    	Min. value         :     -9990.00
+
+	[[ Wind speed ]]
+    	Avg. value         :     -2771.96
+    	Max. value         :        12.76
+    	Min. value         :     -9990.00
+
+[ 2021-10-27 Wednesday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        19.19
+    	Max. value         :        27.40
+    	Min. value         :        13.40
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       100.81
+    	Max. value         :       101.25
+    	Min. value         :       100.53
+
+	[[ Gust speed ]]
+    	Avg. value         :         3.56
+    	Max. value         :         9.70
+    	Min. value         :         0.80
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.07
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        59.74
+    	Max. value         :        91.00
+    	Min. value         :        28.00
+
+	[[ Solar ]]
+    	Avg. value         :       210.82
+    	Max. value         :       975.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.16
+    	Max. value         :         5.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.03
+    	Max. value         :         1.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.26
+    	Max. value         :         1.73
+    	Min. value         :         0.97
+
+	[[ Wind direction ]]
+    	Avg. value         :       189.26
+    	Max. value         :       358.80
+    	Min. value         :         0.10
+
+	[[ Wind speed ]]
+    	Avg. value         :         1.57
+    	Max. value         :         4.58
+    	Min. value         :         0.23
+
+[ 2021-10-26 Tuesday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        11.45
+    	Max. value         :        15.40
+    	Min. value         :         5.90
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       101.55
+    	Max. value         :       101.86
+    	Min. value         :       101.14
+
+	[[ Gust speed ]]
+    	Avg. value         :         3.12
+    	Max. value         :         6.58
+    	Min. value         :         0.64
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.02
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        81.72
+    	Max. value         :        96.00
+    	Min. value         :        65.00
+
+	[[ Solar ]]
+    	Avg. value         :       244.43
+    	Max. value         :       936.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.10
+    	Max. value         :         1.42
+    	Min. value         :         0.88
+
+	[[ Wind direction ]]
+    	Avg. value         :       175.81
+    	Max. value         :       358.80
+    	Min. value         :         1.60
+
+	[[ Wind speed ]]
+    	Avg. value         :         1.49
+    	Max. value         :         3.26
+    	Min. value         :         0.31
+
+[ 2021-10-25 Monday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        11.88
+    	Max. value         :        15.90
+    	Min. value         :         7.10
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       101.94
+    	Max. value         :       102.04
+    	Min. value         :       101.86
+
+	[[ Gust speed ]]
+    	Avg. value         :         4.81
+    	Max. value         :        12.09
+    	Min. value         :         0.60
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.02
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        73.27
+    	Max. value         :        85.00
+    	Min. value         :        59.00
+
+	[[ Solar ]]
+    	Avg. value         :       262.65
+    	Max. value         :       981.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.02
+    	Max. value         :         1.23
+    	Min. value         :         0.85
+
+	[[ Wind direction ]]
+    	Avg. value         :       157.90
+    	Max. value         :       285.70
+    	Min. value         :        14.20
+
+	[[ Wind speed ]]
+    	Avg. value         :         2.63
+    	Max. value         :         6.80
+    	Min. value         :         0.31
+
+[ 2021-10-24 Sunday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        11.90
+    	Max. value         :        14.20
+    	Min. value         :        10.30
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       102.05
+    	Max. value         :       102.17
+    	Min. value         :       101.79
+
+	[[ Gust speed ]]
+    	Avg. value         :         9.80
+    	Max. value         :        14.39
+    	Min. value         :         1.99
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.02
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        66.74
+    	Max. value         :        88.00
+    	Min. value         :        57.00
+
+	[[ Solar ]]
+    	Avg. value         :       243.07
+    	Max. value         :       950.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         0.93
+    	Max. value         :         1.11
+    	Min. value         :         0.80
+
+	[[ Wind direction ]]
+    	Avg. value         :       183.42
+    	Max. value         :       239.90
+    	Min. value         :       147.10
+
+	[[ Wind speed ]]
+    	Avg. value         :         5.67
+    	Max. value         :         9.19
+    	Min. value         :         0.59
+
+[ 2021-10-23 Saturday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        11.54
+    	Max. value         :        13.60
+    	Min. value         :         8.80
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       101.80
+    	Max. value         :       102.13
+    	Min. value         :       101.41
+
+	[[ Gust speed ]]
+    	Avg. value         :         7.25
+    	Max. value         :        13.92
+    	Min. value         :         1.19
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.01
+    	Max. value         :         0.03
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        81.21
+    	Max. value         :        91.00
+    	Min. value         :        68.00
+
+	[[ Solar ]]
+    	Avg. value         :       142.22
+    	Max. value         :       693.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.11
+    	Max. value         :         1.32
+    	Min. value         :         0.91
+
+	[[ Wind direction ]]
+    	Avg. value         :       210.38
+    	Max. value         :       262.50
+    	Min. value         :       162.70
+
+	[[ Wind speed ]]
+    	Avg. value         :         4.12
+    	Max. value         :         8.66
+    	Min. value         :         0.36
+
+[ 2021-10-22 Friday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        14.15
+    	Max. value         :        22.40
+    	Min. value         :        11.90
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       101.21
+    	Max. value         :       101.42
+    	Min. value         :       100.90
+
+	[[ Gust speed ]]
+    	Avg. value         :     -3268.63
+    	Max. value         :        10.40
+    	Min. value         :     -9990.00
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.04
+    	Max. value         :         0.15
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        91.24
+    	Max. value         :        98.00
+    	Min. value         :        62.00
+
+	[[ Solar ]]
+    	Avg. value         :       126.62
+    	Max. value         :       795.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         2.90
+    	Max. value         :        31.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.38
+    	Max. value         :         5.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.47
+    	Max. value         :         1.73
+    	Min. value         :         1.26
+
+	[[ Wind direction ]]
+    	Avg. value         :     -3153.78
+    	Max. value         :       245.80
+    	Min. value         :     -9990.00
+
+	[[ Wind speed ]]
+    	Avg. value         :     -3270.35
+    	Max. value         :         6.21
+    	Min. value         :     -9990.00
+
+[ 2021-10-21 Thursday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        18.47
+    	Max. value         :        22.80
+    	Min. value         :        12.80
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       101.22
+    	Max. value         :       101.37
+    	Min. value         :       101.07
+
+	[[ Gust speed ]]
+    	Avg. value         :         2.70
+    	Max. value         :         6.10
+    	Min. value         :         0.39
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        73.70
+    	Max. value         :        91.00
+    	Min. value         :        57.00
+
+	[[ Solar ]]
+    	Avg. value         :       142.63
+    	Max. value         :       738.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.55
+    	Max. value         :         1.75
+    	Min. value         :         1.33
+
+	[[ Wind direction ]]
+    	Avg. value         :       140.62
+    	Max. value         :       354.20
+    	Min. value         :         5.40
+
+	[[ Wind speed ]]
+    	Avg. value         :         1.05
+    	Max. value         :         2.16
+    	Min. value         :         0.13
+
+[ 2021-10-20 Wednesday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        17.33
+    	Max. value         :        21.20
+    	Min. value         :        13.30
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       101.46
+    	Max. value         :       101.94
+    	Min. value         :       101.18
+
+	[[ Gust speed ]]
+    	Avg. value         :         4.41
+    	Max. value         :         8.14
+    	Min. value         :         0.95
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.02
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        73.78
+    	Max. value         :        90.00
+    	Min. value         :        53.00
+
+	[[ Solar ]]
+    	Avg. value         :       311.58
+    	Max. value         :       907.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.44
+    	Max. value         :         1.59
+    	Min. value         :         1.35
+
+	[[ Wind direction ]]
+    	Avg. value         :        73.24
+    	Max. value         :       359.50
+    	Min. value         :         5.00
+
+	[[ Wind speed ]]
+    	Avg. value         :         1.57
+    	Max. value         :         2.86
+    	Min. value         :         0.31
+
+[ 2021-10-19 Tuesday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        13.16
+    	Max. value         :        17.00
+    	Min. value         :        10.40
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       102.18
+    	Max. value         :       102.35
+    	Min. value         :       101.95
+
+	[[ Gust speed ]]
+    	Avg. value         :         6.42
+    	Max. value         :        11.09
+    	Min. value         :         1.63
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.02
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        84.29
+    	Max. value         :        96.00
+    	Min. value         :        75.00
+
+	[[ Solar ]]
+    	Avg. value         :       310.35
+    	Max. value         :       977.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.27
+    	Max. value         :         1.50
+    	Min. value         :         1.12
+
+	[[ Wind direction ]]
+    	Avg. value         :       101.88
+    	Max. value         :       170.20
+    	Min. value         :         1.40
+
+	[[ Wind speed ]]
+    	Avg. value         :         2.73
+    	Max. value         :         6.40
+    	Min. value         :         0.59
+
+[ 2021-10-18 Monday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        10.97
+    	Max. value         :        15.10
+    	Min. value         :         8.40
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       101.68
+    	Max. value         :       102.16
+    	Min. value         :       101.18
+
+	[[ Gust speed ]]
+    	Avg. value         :         4.96
+    	Max. value         :         8.94
+    	Min. value         :         2.09
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.03
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        85.70
+    	Max. value         :        93.00
+    	Min. value         :        74.00
+
+	[[ Solar ]]
+    	Avg. value         :        80.73
+    	Max. value         :       454.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.12
+    	Max. value         :         1.30
+    	Min. value         :         1.00
+
+	[[ Wind direction ]]
+    	Avg. value         :       219.19
+    	Max. value         :       279.80
+    	Min. value         :       148.90
+
+	[[ Wind speed ]]
+    	Avg. value         :         2.86
+    	Max. value         :         5.51
+    	Min. value         :         1.56
+
+[ 2021-10-17 Sunday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        11.07
+    	Max. value         :        15.90
+    	Min. value         :         6.70
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       101.16
+    	Max. value         :       101.31
+    	Min. value         :       101.01
+
+	[[ Gust speed ]]
+    	Avg. value         :         3.04
+    	Max. value         :         6.88
+    	Min. value         :         0.83
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.02
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        82.84
+    	Max. value         :        95.00
+    	Min. value         :        62.00
+
+	[[ Solar ]]
+    	Avg. value         :       135.92
+    	Max. value         :       597.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.08
+    	Max. value         :         1.28
+    	Min. value         :         0.93
+
+	[[ Wind direction ]]
+    	Avg. value         :       245.30
+    	Max. value         :       305.00
+    	Min. value         :        76.90
+
+	[[ Wind speed ]]
+    	Avg. value         :         1.73
+    	Max. value         :         3.96
+    	Min. value         :         0.44
+
+[ 2021-10-16 Saturday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        11.74
+    	Max. value         :        14.70
+    	Min. value         :         9.10
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       101.11
+    	Max. value         :       101.35
+    	Min. value         :       100.85
+
+	[[ Gust speed ]]
+    	Avg. value         :         6.82
+    	Max. value         :        15.08
+    	Min. value         :         2.72
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.02
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        83.11
+    	Max. value         :        92.00
+    	Min. value         :        71.00
+
+	[[ Solar ]]
+    	Avg. value         :       213.47
+    	Max. value         :       781.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.14
+    	Max. value         :         1.24
+    	Min. value         :         1.01
+
+	[[ Wind direction ]]
+    	Avg. value         :       241.93
+    	Max. value         :       290.40
+    	Min. value         :       170.30
+
+	[[ Wind speed ]]
+    	Avg. value         :         4.05
+    	Max. value         :         8.01
+    	Min. value         :         1.59
+
+[ 2021-10-15 Friday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        11.80
+    	Max. value         :        13.70
+    	Min. value         :        10.20
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       100.21
+    	Max. value         :       100.85
+    	Min. value         :        99.89
+
+	[[ Gust speed ]]
+    	Avg. value         :         9.72
+    	Max. value         :        14.99
+    	Min. value         :         6.04
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.01
+    	Max. value         :         0.03
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        89.43
+    	Max. value         :        98.00
+    	Min. value         :        76.00
+
+	[[ Solar ]]
+    	Avg. value         :        96.16
+    	Max. value         :       545.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.23
+    	Max. value         :         1.36
+    	Min. value         :         1.13
+
+	[[ Wind direction ]]
+    	Avg. value         :       240.58
+    	Max. value         :       292.10
+    	Min. value         :       199.00
+
+	[[ Wind speed ]]
+    	Avg. value         :         5.63
+    	Max. value         :         8.73
+    	Min. value         :         3.44
+
+[ 2021-10-14 Thursday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        12.07
+    	Max. value         :        17.30
+    	Min. value         :         8.40
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       100.25
+    	Max. value         :       100.43
+    	Min. value         :       100.12
+
+	[[ Gust speed ]]
+    	Avg. value         :         3.79
+    	Max. value         :         9.72
+    	Min. value         :         1.02
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.03
+    	Max. value         :         0.24
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        81.59
+    	Max. value         :        94.00
+    	Min. value         :        60.00
+
+	[[ Solar ]]
+    	Avg. value         :       183.71
+    	Max. value         :       936.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         1.32
+    	Max. value         :        20.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.20
+    	Max. value         :         4.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.14
+    	Max. value         :         1.28
+    	Min. value         :         0.99
+
+	[[ Wind direction ]]
+    	Avg. value         :       228.17
+    	Max. value         :       358.50
+    	Min. value         :         4.90
+
+	[[ Wind speed ]]
+    	Avg. value         :         2.01
+    	Max. value         :         5.59
+    	Min. value         :         0.49
+
+[ 2021-10-13 Wednesday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        13.06
+    	Max. value         :        18.50
+    	Min. value         :         8.50
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       100.45
+    	Max. value         :       100.80
+    	Min. value         :       100.23
+
+	[[ Gust speed ]]
+    	Avg. value         :         4.39
+    	Max. value         :        11.71
+    	Min. value         :         0.81
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.04
+    	Max. value         :         0.15
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        84.52
+    	Max. value         :       100.00
+    	Min. value         :        62.00
+
+	[[ Solar ]]
+    	Avg. value         :       169.05
+    	Max. value         :       672.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.26
+    	Max. value         :         1.47
+    	Min. value         :         1.07
+
+	[[ Wind direction ]]
+    	Avg. value         :       214.19
+    	Max. value         :       359.90
+    	Min. value         :         0.30
+
+	[[ Wind speed ]]
+    	Avg. value         :         1.79
+    	Max. value         :         7.10
+    	Min. value         :         0.38
+
+[ 2021-10-12 Tuesday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        15.47
+    	Max. value         :        19.70
+    	Min. value         :        12.40
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       101.10
+    	Max. value         :       101.56
+    	Min. value         :       100.85
+
+	[[ Gust speed ]]
+    	Avg. value         :         5.02
+    	Max. value         :        11.02
+    	Min. value         :         1.32
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        67.40
+    	Max. value         :        83.00
+    	Min. value         :        49.00
+
+	[[ Solar ]]
+    	Avg. value         :       236.18
+    	Max. value         :       874.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.17
+    	Max. value         :         1.27
+    	Min. value         :         0.95
+
+	[[ Wind direction ]]
+    	Avg. value         :       107.98
+    	Max. value         :       358.90
+    	Min. value         :         1.50
+
+	[[ Wind speed ]]
+    	Avg. value         :         1.69
+    	Max. value         :         3.08
+    	Min. value         :         0.61
+
+[ 2021-10-11 Monday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        10.35
+    	Max. value         :        14.00
+    	Min. value         :         4.80
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       101.77
+    	Max. value         :       101.94
+    	Min. value         :       101.59
+
+	[[ Gust speed ]]
+    	Avg. value         :         4.43
+    	Max. value         :        10.81
+    	Min. value         :         0.75
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        72.00
+    	Max. value         :        90.00
+    	Min. value         :        59.00
+
+	[[ Solar ]]
+    	Avg. value         :       277.32
+    	Max. value         :       892.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         0.90
+    	Max. value         :         1.14
+    	Min. value         :         0.75
+
+	[[ Wind direction ]]
+    	Avg. value         :       143.41
+    	Max. value         :       340.70
+    	Min. value         :        10.00
+
+	[[ Wind speed ]]
+    	Avg. value         :         2.12
+    	Max. value         :         4.88
+    	Min. value         :         0.30
+
+[ 2021-10-10 Sunday ]
+
+	[[ Air temp ]]
+    	Avg. value         :         9.42
+    	Max. value         :        13.20
+    	Min. value         :         5.60
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       101.48
+    	Max. value         :       101.85
+    	Min. value         :       101.17
+
+	[[ Gust speed ]]
+    	Avg. value         :         6.95
+    	Max. value         :        12.16
+    	Min. value         :         2.55
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.01
+    	Max. value         :         0.05
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        75.68
+    	Max. value         :        89.00
+    	Min. value         :        60.00
+
+	[[ Solar ]]
+    	Avg. value         :       215.16
+    	Max. value         :       941.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         0.89
+    	Max. value         :         1.01
+    	Min. value         :         0.79
+
+	[[ Wind direction ]]
+    	Avg. value         :       209.41
+    	Max. value         :       279.90
+    	Min. value         :       139.20
+
+	[[ Wind speed ]]
+    	Avg. value         :         4.00
+    	Max. value         :         6.32
+    	Min. value         :         1.60
+
+[ 2021-10-09 Saturday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        14.93
+    	Max. value         :        22.10
+    	Min. value         :         7.20
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       101.00
+    	Max. value         :       101.33
+    	Min. value         :       100.68
+
+	[[ Gust speed ]]
+    	Avg. value         :         5.60
+    	Max. value         :         9.86
+    	Min. value         :         1.44
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        69.50
+    	Max. value         :        89.00
+    	Min. value         :        48.00
+
+	[[ Solar ]]
+    	Avg. value         :       313.42
+    	Max. value         :       867.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.15
+    	Max. value         :         1.41
+    	Min. value         :         0.90
+
+	[[ Wind direction ]]
+    	Avg. value         :       243.55
+    	Max. value         :       316.10
+    	Min. value         :         9.40
+
+	[[ Wind speed ]]
+    	Avg. value         :         3.14
+    	Max. value         :         5.69
+    	Min. value         :         0.71
+
+[ 2021-10-08 Friday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        15.32
+    	Max. value         :        20.30
+    	Min. value         :         9.00
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       101.08
+    	Max. value         :       101.38
+    	Min. value         :       100.95
+
+	[[ Gust speed ]]
+    	Avg. value         :         4.47
+    	Max. value         :         9.54
+    	Min. value         :         0.85
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        62.64
+    	Max. value         :        82.00
+    	Min. value         :        44.00
+
+	[[ Solar ]]
+    	Avg. value         :       295.42
+    	Max. value         :       847.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.07
+    	Max. value         :         1.21
+    	Min. value         :         0.94
+
+	[[ Wind direction ]]
+    	Avg. value         :       286.96
+    	Max. value         :       359.40
+    	Min. value         :         1.70
+
+	[[ Wind speed ]]
+    	Avg. value         :         2.29
+    	Max. value         :         5.19
+    	Min. value         :         0.38
+
+[ 2021-10-07 Thursday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        10.79
+    	Max. value         :        14.70
+    	Min. value         :         6.00
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       101.40
+    	Max. value         :       101.56
+    	Min. value         :       101.12
+
+	[[ Gust speed ]]
+    	Avg. value         :         4.83
+    	Max. value         :        11.68
+    	Min. value         :         0.86
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.01
+    	Max. value         :         0.05
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        74.17
+    	Max. value         :        88.00
+    	Min. value         :        54.00
+
+	[[ Solar ]]
+    	Avg. value         :       213.02
+    	Max. value         :       814.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         0.95
+    	Max. value         :         1.10
+    	Min. value         :         0.83
+
+	[[ Wind direction ]]
+    	Avg. value         :       277.03
+    	Max. value         :       344.00
+    	Min. value         :        81.20
+
+	[[ Wind speed ]]
+    	Avg. value         :         2.65
+    	Max. value         :         6.52
+    	Min. value         :         0.43
+
+[ 2021-10-06 Wednesday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        14.62
+    	Max. value         :        20.50
+    	Min. value         :         7.90
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       100.74
+    	Max. value         :       101.20
+    	Min. value         :       100.39
+
+	[[ Gust speed ]]
+    	Avg. value         :         6.81
+    	Max. value         :        11.76
+    	Min. value         :         2.96
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.03
+    	Max. value         :         0.25
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        69.29
+    	Max. value         :        92.00
+    	Min. value         :        40.00
+
+	[[ Solar ]]
+    	Avg. value         :       242.13
+    	Max. value         :       857.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.11
+    	Max. value         :         1.32
+    	Min. value         :         0.92
+
+	[[ Wind direction ]]
+    	Avg. value         :       288.63
+    	Max. value         :       337.50
+    	Min. value         :       241.10
+
+	[[ Wind speed ]]
+    	Avg. value         :         3.45
+    	Max. value         :         6.60
+    	Min. value         :         1.13
+
+[ 2021-10-05 Tuesday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        11.30
+    	Max. value         :        15.60
+    	Min. value         :         6.50
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       101.14
+    	Max. value         :       101.40
+    	Min. value         :       100.73
+
+	[[ Gust speed ]]
+    	Avg. value         :         6.68
+    	Max. value         :        17.18
+    	Min. value         :         1.20
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        76.71
+    	Max. value         :        93.00
+    	Min. value         :        57.00
+
+	[[ Solar ]]
+    	Avg. value         :       223.96
+    	Max. value         :       747.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.01
+    	Max. value         :         1.22
+    	Min. value         :         0.87
+
+	[[ Wind direction ]]
+    	Avg. value         :       278.66
+    	Max. value         :       333.60
+    	Min. value         :       228.50
+
+	[[ Wind speed ]]
+    	Avg. value         :         3.84
+    	Max. value         :        10.12
+    	Min. value         :         0.85
+
+[ 2021-10-04 Monday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        12.04
+    	Max. value         :        16.10
+    	Min. value         :         9.70
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :        99.99
+    	Max. value         :       100.67
+    	Min. value         :        99.59
+
+	[[ Gust speed ]]
+    	Avg. value         :        11.57
+    	Max. value         :        14.96
+    	Min. value         :         8.75
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.01
+    	Max. value         :         0.09
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        77.51
+    	Max. value         :        91.00
+    	Min. value         :        57.00
+
+	[[ Solar ]]
+    	Avg. value         :       192.41
+    	Max. value         :       860.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.47
+    	Max. value         :        24.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.04
+    	Max. value         :         2.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.08
+    	Max. value         :         1.17
+    	Min. value         :         1.00
+
+	[[ Wind direction ]]
+    	Avg. value         :       283.62
+    	Max. value         :       297.20
+    	Min. value         :       259.00
+
+	[[ Wind speed ]]
+    	Avg. value         :         6.32
+    	Max. value         :         8.27
+    	Min. value         :         4.41
+
+[ 2021-10-03 Sunday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        15.30
+    	Max. value         :        20.10
+    	Min. value         :        10.40
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :        99.75
+    	Max. value         :       100.20
+    	Min. value         :        99.57
+
+	[[ Gust speed ]]
+    	Avg. value         :         5.26
+    	Max. value         :        12.96
+    	Min. value         :         0.96
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.02
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        80.16
+    	Max. value         :        93.00
+    	Min. value         :        69.00
+
+	[[ Solar ]]
+    	Avg. value         :       181.45
+    	Max. value         :       811.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.40
+    	Max. value         :         1.72
+    	Min. value         :         1.01
+
+	[[ Wind direction ]]
+    	Avg. value         :       288.56
+    	Max. value         :       356.30
+    	Min. value         :         3.70
+
+	[[ Wind speed ]]
+    	Avg. value         :         2.53
+    	Max. value         :         7.11
+    	Min. value         :         0.44
+
+[ 2021-10-02 Saturday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        12.71
+    	Max. value         :        16.40
+    	Min. value         :         9.20
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       100.40
+    	Max. value         :       100.55
+    	Min. value         :       100.24
+
+	[[ Gust speed ]]
+    	Avg. value         :         4.39
+    	Max. value         :         8.54
+    	Min. value         :         0.50
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        93.93
+    	Max. value         :       100.00
+    	Min. value         :        86.00
+
+	[[ Solar ]]
+    	Avg. value         :       180.59
+    	Max. value         :       846.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.38
+    	Max. value         :         1.63
+    	Min. value         :         1.14
+
+	[[ Wind direction ]]
+    	Avg. value         :       240.01
+    	Max. value         :       350.90
+    	Min. value         :       158.50
+
+	[[ Wind speed ]]
+    	Avg. value         :         2.48
+    	Max. value         :         5.11
+    	Min. value         :         0.22
+
+[ 2021-10-01 Friday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        14.62
+    	Max. value         :        20.20
+    	Min. value         :        13.10
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       100.41
+    	Max. value         :       100.56
+    	Min. value         :       100.22
+
+	[[ Gust speed ]]
+    	Avg. value         :         5.66
+    	Max. value         :         8.76
+    	Min. value         :         2.89
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.20
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        91.14
+    	Max. value         :       100.00
+    	Min. value         :        69.00
+
+	[[ Solar ]]
+    	Avg. value         :       136.77
+    	Max. value         :       742.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.51
+    	Max. value         :         1.75
+    	Min. value         :         1.42
+
+	[[ Wind direction ]]
+    	Avg. value         :       175.05
+    	Max. value         :       359.60
+    	Min. value         :         2.90
+
+	[[ Wind speed ]]
+    	Avg. value         :         3.23
+    	Max. value         :         5.71
+    	Min. value         :         1.07
+
+[ 2021-09-30 Thursday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        13.60
+    	Max. value         :        15.50
+    	Min. value         :        12.70
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       100.31
+    	Max. value         :       100.65
+    	Min. value         :       100.08
+
+	[[ Gust speed ]]
+    	Avg. value         :      -334.76
+    	Max. value         :         9.84
+    	Min. value         :     -9990.00
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.02
+    	Max. value         :         0.29
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        97.78
+    	Max. value         :       100.00
+    	Min. value         :        94.00
+
+	[[ Solar ]]
+    	Avg. value         :        77.15
+    	Max. value         :       440.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.52
+    	Max. value         :         1.70
+    	Min. value         :         1.45
+
+	[[ Wind direction ]]
+    	Avg. value         :      -133.51
+    	Max. value         :       353.30
+    	Min. value         :     -9990.00
+
+	[[ Wind speed ]]
+    	Avg. value         :      -336.79
+    	Max. value         :         3.79
+    	Min. value         :     -9990.00
+
+[ 2021-09-29 Wednesday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        13.66
+    	Max. value         :        15.70
+    	Min. value         :        12.20
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       101.01
+    	Max. value         :       101.40
+    	Min. value         :       100.68
+
+	[[ Gust speed ]]
+    	Avg. value         :         7.38
+    	Max. value         :        12.57
+    	Min. value         :         1.59
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.01
+    	Max. value         :         0.12
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        89.87
+    	Max. value         :        98.00
+    	Min. value         :        81.00
+
+	[[ Solar ]]
+    	Avg. value         :       117.57
+    	Max. value         :       877.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.40
+    	Max. value         :         1.66
+    	Min. value         :         1.34
+
+	[[ Wind direction ]]
+    	Avg. value         :       102.73
+    	Max. value         :       126.70
+    	Min. value         :        75.10
+
+	[[ Wind speed ]]
+    	Avg. value         :         3.05
+    	Max. value         :         4.27
+    	Min. value         :         0.64
+
+[ 2021-09-28 Tuesday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        14.24
+    	Max. value         :        21.60
+    	Min. value         :        11.40
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       101.40
+    	Max. value         :       101.55
+    	Min. value         :       101.24
+
+	[[ Gust speed ]]
+    	Avg. value         :         3.57
+    	Max. value         :         7.20
+    	Min. value         :         1.31
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        76.10
+    	Max. value         :        92.00
+    	Min. value         :        41.00
+
+	[[ Solar ]]
+    	Avg. value         :       132.67
+    	Max. value         :       859.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.21
+    	Max. value         :         1.39
+    	Min. value         :         1.05
+
+	[[ Wind direction ]]
+    	Avg. value         :       147.99
+    	Max. value         :       353.50
+    	Min. value         :         2.60
+
+	[[ Wind speed ]]
+    	Avg. value         :         1.87
+    	Max. value         :         3.15
+    	Min. value         :         0.61
+
+[ 2021-09-27 Monday ]
+
+	[[ Air temp ]]
+    	Avg. value         :        12.74
+    	Max. value         :        20.30
+    	Min. value         :         4.60
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       101.63
+    	Max. value         :       101.98
+    	Min. value         :       101.51
+
+	[[ Gust speed ]]
+    	Avg. value         :         2.53
+    	Max. value         :         5.92
+    	Min. value         :         1.05
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        70.50
+    	Max. value         :        93.00
+    	Min. value         :        44.00
+
+	[[ Solar ]]
+    	Avg. value         :       226.96
+    	Max. value         :       825.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         1.00
+    	Max. value         :         1.22
+    	Min. value         :         0.77
+
+	[[ Wind direction ]]
+    	Avg. value         :       179.01
+    	Max. value         :       359.50
+    	Min. value         :         0.60
+
+	[[ Wind speed ]]
+    	Avg. value         :         1.06
+    	Max. value         :         1.96
+    	Min. value         :         0.35
+
+[ 2021-09-26 Sunday ]
+
+	[[ Air temp ]]
+    	Avg. value         :         9.03
+    	Max. value         :        14.50
+    	Min. value         :         1.60
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       102.30
+    	Max. value         :       102.69
+    	Min. value         :       101.99
+
+	[[ Gust speed ]]
+    	Avg. value         :         3.40
+    	Max. value         :         7.48
+    	Min. value         :         0.53
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        77.67
+    	Max. value         :        96.00
+    	Min. value         :        58.00
+
+	[[ Solar ]]
+    	Avg. value         :       231.10
+    	Max. value         :       810.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         0.89
+    	Max. value         :         1.14
+    	Min. value         :         0.64
+
+	[[ Wind direction ]]
+    	Avg. value         :       174.75
+    	Max. value         :       358.20
+    	Min. value         :         7.20
+
+	[[ Wind speed ]]
+    	Avg. value         :         1.45
+    	Max. value         :         3.66
+    	Min. value         :         0.22
+
+[ 2021-09-25 Saturday ]
+
+	[[ Air temp ]]
+    	Avg. value         :         8.22
+    	Max. value         :        12.20
+    	Min. value         :         3.50
+
+	[[ Atmospheric pressure ]]
+    	Avg. value         :       102.33
+    	Max. value         :       102.69
+    	Min. value         :       101.94
+
+	[[ Gust speed ]]
+    	Avg. value         :         4.90
+    	Max. value         :        12.78
+    	Min. value         :         0.92
+
+	[[ Precipitation ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Relative humidity ]]
+    	Avg. value         :        77.45
+    	Max. value         :        96.00
+    	Min. value         :        62.00
+
+	[[ Solar ]]
+    	Avg. value         :       178.77
+    	Max. value         :       756.00
+    	Min. value         :         0.00
+
+	[[ Strike distance ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Strikes ]]
+    	Avg. value         :         0.00
+    	Max. value         :         0.00
+    	Min. value         :         0.00
+
+	[[ Vapour pressure ]]
+    	Avg. value         :         0.84
+    	Max. value         :         1.06
+    	Min. value         :         0.73
+
+	[[ Wind direction ]]
+    	Avg. value         :       226.36
+    	Max. value         :       328.30
+    	Min. value         :       129.40
+
+	[[ Wind speed ]]
+    	Avg. value         :         2.80
+    	Max. value         :         6.99
+    	Min. value         :         0.38
