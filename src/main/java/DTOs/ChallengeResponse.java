@@ -3,7 +3,7 @@ package DTOs;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.util.List;
-
+// 'Jackson' will ignore fields that are not in the DTO
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class ChallengeResponse {
     private List<FieldMetadata> fields;

@@ -1,5 +1,8 @@
 import DTOs.ChallengeResponse;
 import DTOs.FieldMetadata;
+/*
+    Using 'Jackson' library for easy JSON reading,
+* */
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.File;
@@ -8,28 +11,22 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-/*
-   Mejoras
- * Parsea los valores de las caracteristicas del JSON
- * Aniade mas clasificaciones - (Filtro por hora, lugar, fecha)
- * Encontrar la forma de presentar la informacion de una forma mas agradable
- * Mejorar las soluciones (Codigo mas legible, funcional)
-*/
-
 public class Main {
+    // One single instance from the ObjectMapper
+    public static final ObjectMapper objectMapper = new ObjectMapper();
     public static void main(String[] args) {
         String fileName = "src/main/resources/WeatherStations.json";
         List<String> fields = readFields(fileName);
         List<Map<String, Object>> records = readRecords(fileName, fields);
-        // Reporte general
+        // General report
         getGeneralStatistics(fields, records);
-        // Reporte filtrado por fecha
+        // Date filter report
         List<String> dates = getUniqueDates(records);
         getDayStatistics(fields, records, dates);
-        // Reporte filtrado por hora
+        // Hour filter report
         List<String> hours = getUniqueHours(records);
         getHourStatistics(fields, records, hours);
-        // Reporte filtrado por lugar
+        // Location filter report
         List<String> locations = getUniqueLocations(records);
         getLocationStatistics(fields, records , locations);
     }
@@ -42,20 +39,18 @@ public class Main {
     }
 
     public static List<String> readFields(String fileName) {
-        ObjectMapper objectMapper = new ObjectMapper();
         try {
             ChallengeResponse challengeResponse = objectMapper.readValue(new File(fileName), ChallengeResponse.class);
             return challengeResponse.getFields().stream()
                     .map(FieldMetadata::getId)
                     .toList();
         } catch (Exception e) {
-            System.err.println(e);
+            System.err.println("ERROR: " + e.getMessage());
         }
         return Collections.emptyList();
     }
 
     public static List<Map<String, Object>> readRecords(String fileName, List<String> fields) {
-        ObjectMapper objectMapper = new ObjectMapper();
         try {
             ChallengeResponse challengeResponse = objectMapper.readValue(new File(fileName), ChallengeResponse.class);
             return challengeResponse.getRecords().stream()
@@ -68,7 +63,7 @@ public class Main {
                             )))
                     .toList();
         } catch (Exception e) {
-            System.err.println(e);
+            System.err.println("ERORR: " + e.getMessage());
         }
         return Collections.emptyList();
     }
@@ -114,6 +109,7 @@ public class Main {
                 .findFirst().orElse("");
     }
 
+    // TODO: Apply the DRY principle for 'getUnique' functions
     private static List<String> getUniqueDates(List<Map<String, Object>> records) {
         return records.stream()
                 .map(map -> map.get("time"))
@@ -141,6 +137,7 @@ public class Main {
                 .toList();
     }
 
+    // TODO: Apply DRY principle for 'getStatistics' functions
     public static void getDayStatistics(List<String> fields, List<Map<String, Object>> records, List<String> days) {
         String fileName = "outputs/perDayStatistics.txt";
         /*FIX: ONLY FOR 50 DIFFERENT DAYS*/
@@ -254,5 +251,4 @@ public class Main {
             System.err.println("ERROR: " + e.getMessage());
         }
     }
-
 }
