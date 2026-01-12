@@ -12,8 +12,9 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class Main {
-    // One single instance from the ObjectMapper
+    // One single instance from the ObjectMapper - SINGLETON
     public static final ObjectMapper objectMapper = new ObjectMapper();
+
     public static void main(String[] args) {
         String fileName = "src/main/resources/WeatherStations.json";
         List<String> fields = readFields(fileName);
@@ -28,7 +29,7 @@ public class Main {
         getHourStatistics(fields, records, hours);
         // Location filter report
         List<String> locations = getUniqueLocations(records);
-        getLocationStatistics(fields, records , locations);
+        getLocationStatistics(fields, records, locations);
     }
 
     private static String formatIdName(String id) {
@@ -41,9 +42,7 @@ public class Main {
     public static List<String> readFields(String fileName) {
         try {
             ChallengeResponse challengeResponse = objectMapper.readValue(new File(fileName), ChallengeResponse.class);
-            return challengeResponse.getFields().stream()
-                    .map(FieldMetadata::getId)
-                    .toList();
+            return challengeResponse.getFields().stream().map(FieldMetadata::getId).toList();
         } catch (Exception e) {
             System.err.println("ERROR: " + e.getMessage());
         }
@@ -53,15 +52,7 @@ public class Main {
     public static List<Map<String, Object>> readRecords(String fileName, List<String> fields) {
         try {
             ChallengeResponse challengeResponse = objectMapper.readValue(new File(fileName), ChallengeResponse.class);
-            return challengeResponse.getRecords().stream()
-                    .map(rawRecord -> IntStream.range(0, fields.size())
-                            .boxed()
-                            .collect(Collectors.toMap(
-                                    fields::get,
-                                    i -> Optional.ofNullable(rawRecord.get(i)).orElse("0.0"),
-                                    (first, second) -> first
-                            )))
-                    .toList();
+            return challengeResponse.getRecords().stream().map(rawRecord -> IntStream.range(0, fields.size()).boxed().collect(Collectors.toMap(fields::get, i -> Optional.ofNullable(rawRecord.get(i)).orElse("0.0"), (first, second) -> first))).toList();
         } catch (Exception e) {
             System.err.println("ERORR: " + e.getMessage());
         }
@@ -77,11 +68,7 @@ public class Main {
             for (int i = 9; i < fields.size(); i++) {
                 String field = fields.get(i);
                 double average, minimum, maximum;
-                List<Double> values = records.stream()
-                        .map(map -> map.get(field))
-                        .filter(Objects::nonNull)
-                        .map(val -> Double.parseDouble(val.toString()))
-                        .toList();
+                List<Double> values = records.stream().map(map -> map.get(field)).filter(Objects::nonNull).map(val -> Double.parseDouble(val.toString())).toList();
                 average = values.stream().reduce(Double::sum).orElse(0.0);
                 average = values.isEmpty() ? average : average / values.size();
                 minimum = values.stream().mapToDouble(Double::doubleValue).min().orElse(0.0);
@@ -98,43 +85,23 @@ public class Main {
     }
 
     public static String getDayOfWeek(List<Map<String, Object>> records, String date) {
-        return records.stream()
-                .filter(map -> {
-                    Object time = map.get("time");
-                    return time != null && time.toString().startsWith(date);
-                })
-                .map(map -> map.get("dayofweek"))
-                .filter(Objects::nonNull)
-                .map(Object::toString)
-                .findFirst().orElse("");
+        return records.stream().filter(map -> {
+            Object time = map.get("time");
+            return time != null && time.toString().startsWith(date);
+        }).map(map -> map.get("dayofweek")).filter(Objects::nonNull).map(Object::toString).findFirst().orElse("");
     }
 
     // TODO: Apply the DRY principle for 'getUnique' functions
     private static List<String> getUniqueDates(List<Map<String, Object>> records) {
-        return records.stream()
-                .map(map -> map.get("time"))
-                .filter(Objects::nonNull)
-                .map(value -> value.toString().substring(0, 10))
-                .distinct()
-                .toList();
+        return records.stream().map(map -> map.get("time")).filter(Objects::nonNull).map(value -> value.toString().substring(0, 10)).distinct().toList();
     }
 
-    private static List<String> getUniqueHours(List<Map<String , Object>> records) {
-        return records.stream()
-                .map(map -> map.get("time"))
-                .filter(Objects::nonNull)
-                .map(value -> value.toString().substring(11,16))
-                .distinct()
-                .toList();
+    private static List<String> getUniqueHours(List<Map<String, Object>> records) {
+        return records.stream().map(map -> map.get("time")).filter(Objects::nonNull).map(value -> value.toString().substring(11, 16)).distinct().toList();
     }
 
-    private static List<String> getUniqueLocations(List<Map<String, Object>> records){
-        return records.stream()
-                .map(map -> map.get("name"))
-                .filter(Objects::nonNull)
-                .map(Object::toString)
-                .distinct()
-                .toList();
+    private static List<String> getUniqueLocations(List<Map<String, Object>> records) {
+        return records.stream().map(map -> map.get("name")).filter(Objects::nonNull).map(Object::toString).distinct().toList();
     }
 
     // TODO: Apply DRY principle for 'getStatistics' functions
@@ -147,20 +114,15 @@ public class Main {
             buffer.println("============================================================");
             int cnt = 0;
             for (String day : days) {
-                if(cnt++ == 50) break;
+                if (cnt++ == 50) break;
                 buffer.println("\n[ " + day + " " + getDayOfWeek(records, day) + " ]");
                 for (int i = 9; i < fields.size(); i++) {
                     String field = fields.get(i);
                     double average, minimum, maximum;
-                    List<Double> values = records.stream()
-                            .filter(map -> {
-                                Object time = map.get("time");
-                                return time != null && time.toString().startsWith(day);
-                            })
-                            .map(map -> map.get(field))
-                            .filter(Objects::nonNull)
-                            .map(val -> Double.parseDouble(val.toString()))
-                            .toList();
+                    List<Double> values = records.stream().filter(map -> {
+                        Object time = map.get("time");
+                        return time != null && time.toString().startsWith(day);
+                    }).map(map -> map.get(field)).filter(Objects::nonNull).map(val -> Double.parseDouble(val.toString())).toList();
                     average = values.stream().reduce(Double::sum).orElse(0.0);
                     average = values.isEmpty() ? average : average / values.size();
                     minimum = values.stream().mapToDouble(Double::doubleValue).min().orElse(0.0);
@@ -185,20 +147,15 @@ public class Main {
             buffer.println("============================================================");
             int cnt = 0;
             for (String hour : hours) {
-                if(cnt++ == 50) break;
+                if (cnt++ == 50) break;
                 buffer.println("\n[ " + hour + " ]");
                 for (int i = 9; i < fields.size(); i++) {
                     String field = fields.get(i);
                     double average, minimum, maximum;
-                    List<Double> values = records.stream()
-                            .filter(map -> {
-                                Object time = map.get("time");
-                                return time != null && time.toString().substring(11 , 16).equals(hour);
-                            })
-                            .map(map -> map.get(field))
-                            .filter(Objects::nonNull)
-                            .map(val -> Double.parseDouble(val.toString()))
-                            .toList();
+                    List<Double> values = records.stream().filter(map -> {
+                        Object time = map.get("time");
+                        return time != null && time.toString().substring(11, 16).equals(hour);
+                    }).map(map -> map.get(field)).filter(Objects::nonNull).map(val -> Double.parseDouble(val.toString())).toList();
                     average = values.stream().reduce(Double::sum).orElse(0.0);
                     average = values.isEmpty() ? average : average / values.size();
                     minimum = values.stream().mapToDouble(Double::doubleValue).min().orElse(0.0);
@@ -223,20 +180,15 @@ public class Main {
             buffer.println("============================================================");
             int cnt = 0;
             for (String location : locations) {
-                if(cnt++ == 50) break;
+                if (cnt++ == 50) break;
                 buffer.println("\n[ " + location + " ]");
                 for (int i = 9; i < fields.size(); i++) {
                     String field = fields.get(i);
                     double average, minimum, maximum;
-                    List<Double> values = records.stream()
-                            .filter(map -> {
-                                Object time = map.get("name");
-                                return time != null && time.toString().equals(location);
-                            })
-                            .map(map -> map.get(field))
-                            .filter(Objects::nonNull)
-                            .map(val -> Double.parseDouble(val.toString()))
-                            .toList();
+                    List<Double> values = records.stream().filter(map -> {
+                        Object time = map.get("name");
+                        return time != null && time.toString().equals(location);
+                    }).map(map -> map.get(field)).filter(Objects::nonNull).map(val -> Double.parseDouble(val.toString())).toList();
                     average = values.stream().reduce(Double::sum).orElse(0.0);
                     average = values.isEmpty() ? average : average / values.size();
                     minimum = values.stream().mapToDouble(Double::doubleValue).min().orElse(0.0);

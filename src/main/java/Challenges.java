@@ -1,4 +1,5 @@
 /* (C)2024 */
+
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
@@ -26,10 +27,10 @@ public class Challenges {
         String hh = (seconds / 3600 > 9) ? String.valueOf(seconds / 3600) : '0' + String.valueOf(seconds / 3600);
         seconds %= 3600;
         // So, the rest after the division must belong to the minutes or seconds section, for get the number of minutes apply the same operation but now dividing by 60
-        String mm = (seconds / 60 > 9)   ? String.valueOf(seconds / 60) : '0' + String.valueOf(seconds / 60);
+        String mm = (seconds / 60 > 9) ? String.valueOf(seconds / 60) : '0' + String.valueOf(seconds / 60);
         seconds %= 60;
         // At the end, the rest after both operations belongs to the number of seconds.
-        String ss = String.valueOf(seconds);
+        String ss = (seconds > 9) ? String.valueOf(seconds) : '0' + String.valueOf(seconds);
         return String.join(":", hh, mm, ss);
     }
 
@@ -54,13 +55,13 @@ public class Challenges {
         String[] COUNTRY_NAMES = {"Germany", "Norway", "Island", "Japan", "Israel"};
         index %= COUNTRY_NAMES.length;
         String[] AUX_LIST = new String[5];
-        System.arraycopy(COUNTRY_NAMES , 0 , AUX_LIST , 0 , 5);
+        System.arraycopy(COUNTRY_NAMES, 0, AUX_LIST, 0, 5);
         /*
-        * For this challenge, I use the index argument as an offset between two pointers.
-        * The first one (in AUX_LIST), will init in the index position while the second (in COUNTRY_NAMES) will init in position 0.
-        * For manage the overflow in the first pointer, I use the modular operator to simulate the circular road.
-        * */
-        for(int i = 0; i < COUNTRY_NAMES.length; i++) COUNTRY_NAMES[i] = AUX_LIST[(i + index) % COUNTRY_NAMES.length];
+         * For this challenge, I use the index argument as an offset between two pointers.
+         * The first one (in AUX_LIST), will init in the index position while the second (in COUNTRY_NAMES) will init in position 0.
+         * For manage the overflow in the first pointer, I use the modular operator to simulate the circular road.
+         * */
+        for (int i = 0; i < COUNTRY_NAMES.length; i++) COUNTRY_NAMES[i] = AUX_LIST[(i + index) % COUNTRY_NAMES.length];
         return COUNTRY_NAMES;
     }
     /* *****
@@ -90,12 +91,12 @@ public class Challenges {
             So for this, I decided to use the BigInteger class instead.
         */
         BigInteger accumulator = BigInteger.ZERO;
-        for(int i = 1; i <= number; i++) {
+        for (int i = 1; i <= number; i++) {
             BigInteger adds = BigInteger.valueOf(i).pow(i);
             accumulator = accumulator.add(adds);
         }
         StringBuilder result = new StringBuilder();
-        for(int i = 0 ; i < lastDigits; i++) {
+        for (int i = 0; i < lastDigits; i++) {
             result.append(accumulator.mod(BigInteger.TEN));
             accumulator = accumulator.divide(BigInteger.TEN);
         }
@@ -123,9 +124,9 @@ public class Challenges {
     public Integer digitSum(int n) {
         // As the previous challenge, here the function will work with big values also.
         BigInteger accumulator = BigInteger.ONE;
-        for(int i = 1; i <= n; i++) accumulator = accumulator.multiply(BigInteger.valueOf(i));
+        for (int i = 1; i <= n; i++) accumulator = accumulator.multiply(BigInteger.valueOf(i));
         int result = 0;
-        while(!accumulator.equals(BigInteger.ZERO)) {
+        while (!accumulator.equals(BigInteger.ZERO)) {
             result += accumulator.mod(BigInteger.TEN).intValue();
             accumulator = accumulator.divide(BigInteger.TEN);
         }
@@ -139,13 +140,13 @@ public class Challenges {
      * H = 72, the sum of H 72 and 33 gives 105 which ascii value is i;
      * The function must return the string encoded using the encryption function below.
      *
-     * @param ascivalues  hand, player2 hand
+     * @param ascivalues hand, player2 hand
      */
     public String decrypt(List<Integer> ascivalues) {
         // As the statement says, each value depends on directly from the previous value, so for manage that, I use an auxiliary variable called 'accumulator'
         StringBuilder result = new StringBuilder();
         int accumulator = 0;
-        for(Integer i : ascivalues){
+        for (Integer i : ascivalues) {
             accumulator += i;
             result.append((char) accumulator); // Here, 'accumulator' is cast as a char, for its respective ASCII value
         }
@@ -159,13 +160,13 @@ public class Challenges {
      * // H = 72, the difference between the H and e is 29
      * The function must return an array of integer ascii values.
      *
-     * @param text  hand, player2 hand
+     * @param text hand, player2 hand
      */
     public List<Integer> encrypt(String text) {
         List<Integer> result = new ArrayList<>();
         // The idea is similar to the last one but for this I do not accumulate the sum, only store the last ASCII value for the next use.
         int prev = 0;
-        for(int i = 0 ; i < text.length(); i++){
+        for (int i = 0; i < text.length(); i++) {
             int val = text.charAt(i); // Declaring 'val' in this scope, automatically cast the ASCII value to int.
             result.add(val - prev);
             prev = val;
