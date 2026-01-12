@@ -97,7 +97,7 @@ public class Challenges {
             accumulator = accumulator.add(adds).mod(digits);
         }
         StringBuilder result = new StringBuilder(accumulator.toString());
-        while(result.length() < lastDigits) result.insert(0, '0');
+        while (result.length() < lastDigits) result.insert(0, '0');
         return result.toString();
     }
 
@@ -122,12 +122,10 @@ public class Challenges {
         // As the previous challenge, here the function will work with big values also.
         BigInteger accumulator = BigInteger.ONE;
         for (int i = 1; i <= n; i++) accumulator = accumulator.multiply(BigInteger.valueOf(i));
-        int result = 0;
-        while (!accumulator.equals(BigInteger.ZERO)) {
-            result += accumulator.mod(BigInteger.TEN).intValue();
-            accumulator = accumulator.divide(BigInteger.TEN);
-        }
-        return result;
+        return accumulator.toString()
+                .chars()
+                .map(Character::getNumericValue)
+                .sum();
     }
 
     /**
