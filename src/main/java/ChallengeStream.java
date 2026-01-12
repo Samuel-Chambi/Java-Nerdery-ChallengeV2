@@ -107,8 +107,11 @@ public class ChallengeStream {
         }
         return calls.stream()
                 .filter(call -> call.getType().equals(type))
-                .map(call -> new CallSummary(call,
-                        (initCost * Integer.min(initDuration, call.getDuration())) + (additionalCost * (call.getDuration() - Integer.min(initDuration, call.getDuration())))))
+                .map(call -> new CallSummary(
+                                call,
+                                (initCost * Integer.min(initDuration, call.getDuration())) + (additionalCost * (call.getDuration() - Integer.min(initDuration, call.getDuration())))
+                        )
+                )
                 .collect(Collectors.toList());
     }
 }
