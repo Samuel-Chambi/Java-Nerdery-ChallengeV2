@@ -90,17 +90,14 @@ public class Challenges {
             That not fits on Long limits (until around 10^18)
             So for this, I decided to use the BigInteger class instead.
         */
+        BigInteger digits = BigInteger.TEN.pow(lastDigits);
         BigInteger accumulator = BigInteger.ZERO;
         for (int i = 1; i <= number; i++) {
-            BigInteger adds = BigInteger.valueOf(i).pow(i);
-            accumulator = accumulator.add(adds);
+            BigInteger adds = BigInteger.valueOf(i).modPow(BigInteger.valueOf(i), digits);
+            accumulator = accumulator.add(adds).mod(digits);
         }
-        StringBuilder result = new StringBuilder();
-        for (int i = 0; i < lastDigits; i++) {
-            result.append(accumulator.mod(BigInteger.TEN));
-            accumulator = accumulator.divide(BigInteger.TEN);
-        }
-        result.reverse();
+        StringBuilder result = new StringBuilder(accumulator.toString());
+        while(result.length() < lastDigits) result.insert(0, '0');
         return result.toString();
     }
 
