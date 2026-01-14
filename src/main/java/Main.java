@@ -1,5 +1,5 @@
-import DTOs.ChallengeResponse;
-import DTOs.FieldMetadata;
+import model.WeatherDataset;
+import model.FieldMetadata;
 /*
     Using 'Jackson' library for easy JSON reading,
 * */
@@ -70,6 +70,7 @@ public class Main {
                 "outputs/locationStatistics.txt"
         ));
     }
+
     private static void timed(String title, Runnable task){
         long startTime = System.nanoTime();
         task.run();
@@ -90,7 +91,7 @@ public class Main {
 
     public static List<String> readFields(String fileName) {
         try {
-            ChallengeResponse challengeResponse = objectMapper.readValue(new File(fileName), ChallengeResponse.class);
+            WeatherDataset challengeResponse = objectMapper.readValue(new File(fileName), WeatherDataset.class);
             return challengeResponse.getFields().stream().map(FieldMetadata::getId).toList();
         } catch (Exception e) {
             System.err.println("ERROR: " + e.getMessage());
@@ -100,7 +101,7 @@ public class Main {
 
     public static List<Map<String, Object>> readRecords(String fileName, List<String> fields) {
         try {
-            ChallengeResponse challengeResponse = objectMapper.readValue(new File(fileName), ChallengeResponse.class);
+            WeatherDataset challengeResponse = objectMapper.readValue(new File(fileName), WeatherDataset.class);
             return challengeResponse.getRecords().stream().map(rawRecord -> IntStream.range(0, fields.size()).boxed().collect(Collectors.toMap(fields::get, i -> Optional.ofNullable(rawRecord.get(i)).orElse("0.0"), (first, second) -> first))).toList();
         } catch (Exception e) {
             System.err.println("ERORR: " + e.getMessage());
@@ -116,7 +117,7 @@ public class Main {
             buffer.println("============================================================");
             for (int i = 9; i < fields.size(); i++) {
                 String field = fields.get(i);
-                java.util.DoubleSummaryStatistics stats = records.stream()
+                DoubleSummaryStatistics stats = records.stream()
                         .map(map -> map.get(field))
                         .filter(Objects::nonNull)
                         .mapToDouble(val -> Double.parseDouble(val.toString()))
@@ -158,7 +159,6 @@ public class Main {
                             stats.getMax(),
                             stats.getMin()
                     );
-
                 }
             }
         } catch (Exception e) {

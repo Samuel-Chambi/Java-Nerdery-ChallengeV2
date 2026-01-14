@@ -1,11 +1,11 @@
-package DTOs;
+package model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.util.List;
 // 'Jackson' will ignore fields that are not in the DTO
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class ChallengeResponse {
+public class WeatherDataset  {
     private List<FieldMetadata> fields;
     private List<List<Object>> records;
 
