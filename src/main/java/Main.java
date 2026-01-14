@@ -8,28 +8,77 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.File;
 import java.io.PrintWriter;
 import java.util.*;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class Main {
     // One single instance from the ObjectMapper - SINGLETON
+    record dayRecord(String date , String dayOfWeek) {};
     public static final ObjectMapper objectMapper = new ObjectMapper();
 
     public static void main(String[] args) {
         String fileName = "src/main/resources/WeatherStations.json";
+        long start = System.nanoTime();
         List<String> fields = readFields(fileName);
         List<Map<String, Object>> records = readRecords(fileName, fields);
+        long end = System.nanoTime();
+        System.out.printf(
+                "%-25s : %8.2f ms%n",
+                "Reading time",
+                (end - start) / 1_000_000.0
+        );
         // General report
-        getGeneralStatistics(fields, records);
+        timed("General statistics", () -> getGeneralStatistics(fields, records));
         // Date filter report
-        List<String> dates = getUniqueDates(records);
-        getDayStatistics(fields, records, dates);
-        // Hour filter report
-        List<String> hours = getUniqueHours(records);
-        getHourStatistics(fields, records, hours);
-        // Location filter report
-        List<String> locations = getUniqueLocations(records);
-        getLocationStatistics(fields, records, locations);
+        Map<dayRecord, List<Map<String, Object>>> byDay = records.stream()
+                        .filter(map -> map.get("time") != null && map.get("dayofweek") != null)
+                        .collect(Collectors.groupingBy(
+                                key -> new dayRecord(
+                                        key.get("time").toString().substring(0 , 10),
+                                        key.get("dayofweek").toString())
+                        ));
+        timed("Day statistics" , () -> getStatisticsBy(
+                fields,
+                byDay,
+                format -> format.date() + " " + format.dayOfWeek(),
+                "Statistics - Filtered by Date",
+                "outputs/dayStatistics.txt"
+        ));
+        Map<String , List<Map<String, Object>>> byHour = records.stream()
+                .filter(map -> map.get("time") != null)
+                .collect(Collectors.groupingBy(
+                        key -> key.get("time").toString().substring(11 , 16)
+                ));
+        timed("Hour statistics" , () -> getStatisticsBy(
+                fields,
+                byHour,
+                format -> format,
+                "Statistics - Filtered by Hour",
+                "outputs/hourStatistics.txt"
+        ));
+
+        Map<String , List<Map<String, Object>>> byLocation = records.stream()
+                        .filter(map -> map.get("name") != null)
+                        .collect(Collectors.groupingBy(
+                                        key -> key.get("name").toString()));
+        timed("Location statistics" , () -> getStatisticsBy(
+                fields,
+                byLocation,
+                format -> format,
+                "Statistics - Filtered by Location",
+                "outputs/locationStatistics.txt"
+        ));
+    }
+    private static void timed(String title, Runnable task){
+        long startTime = System.nanoTime();
+        task.run();
+        long endTime = System.nanoTime();
+        System.out.printf(
+                "%-25s : %8.2f ms%n",
+                title,
+                (endTime - startTime) / 1_000_000.0
+        );
     }
 
     private static String formatIdName(String id) {
@@ -63,20 +112,22 @@ public class Main {
         String fileName = "outputs/generalStatistics.txt";
         try (PrintWriter buffer = new PrintWriter(fileName)) {
             buffer.println("============================================================");
-            buffer.println("GENERAL REPORT");
+            buffer.println("Statistics - General");
             buffer.println("============================================================");
             for (int i = 9; i < fields.size(); i++) {
                 String field = fields.get(i);
-                double average, minimum, maximum;
-                List<Double> values = records.stream().map(map -> map.get(field)).filter(Objects::nonNull).map(val -> Double.parseDouble(val.toString())).toList();
-                average = values.stream().reduce(Double::sum).orElse(0.0);
-                average = values.isEmpty() ? average : average / values.size();
-                minimum = values.stream().mapToDouble(Double::doubleValue).min().orElse(0.0);
-                maximum = values.stream().mapToDouble(Double::doubleValue).max().orElse(0.0);
+                java.util.DoubleSummaryStatistics stats = records.stream()
+                        .map(map -> map.get(field))
+                        .filter(Objects::nonNull)
+                        .mapToDouble(val -> Double.parseDouble(val.toString()))
+                        .summaryStatistics();
                 buffer.println("\n[ " + formatIdName(field) + " ]");
-                buffer.printf("    %-18s : %12.2f%n", "Avg. value", average);
-                buffer.printf("    %-18s : %12.2f%n", "Max. value", maximum);
-                buffer.printf("    %-18s : %12.2f%n", "Min. value", minimum);
+                buffer.printf(
+                        "    \tAvg : %8.2f | Max : %8.2f | Min : %8.2f%n",
+                        stats.getAverage(),
+                        stats.getMax(),
+                        stats.getMin()
+                );
             }
         } catch (Exception e) {
             System.err.println("ERROR: " + e.getMessage());
@@ -84,119 +135,30 @@ public class Main {
 
     }
 
-    public static String getDayOfWeek(List<Map<String, Object>> records, String date) {
-        return records.stream().filter(map -> {
-            Object time = map.get("time");
-            return time != null && time.toString().startsWith(date);
-        }).map(map -> map.get("dayofweek")).filter(Objects::nonNull).map(Object::toString).findFirst().orElse("");
-    }
-
-    // TODO: Apply the DRY principle for 'getUnique' functions
-    private static List<String> getUniqueDates(List<Map<String, Object>> records) {
-        return records.stream().map(map -> map.get("time")).filter(Objects::nonNull).map(value -> value.toString().substring(0, 10)).distinct().toList();
-    }
-
-    private static List<String> getUniqueHours(List<Map<String, Object>> records) {
-        return records.stream().map(map -> map.get("time")).filter(Objects::nonNull).map(value -> value.toString().substring(11, 16)).distinct().toList();
-    }
-
-    private static List<String> getUniqueLocations(List<Map<String, Object>> records) {
-        return records.stream().map(map -> map.get("name")).filter(Objects::nonNull).map(Object::toString).distinct().toList();
-    }
-
-    // TODO: Apply DRY principle for 'getStatistics' functions
-    public static void getDayStatistics(List<String> fields, List<Map<String, Object>> records, List<String> days) {
-        String fileName = "outputs/perDayStatistics.txt";
-        /*FIX: ONLY FOR 50 DIFFERENT DAYS*/
+    public static <type> void getStatisticsBy(List<String> fields, Map<type, List<Map<String, Object>>> filteredRecords, Function<type, String> formatter , String reportTitle , String fileName){
         try (PrintWriter buffer = new PrintWriter(fileName)) {
             buffer.println("============================================================");
-            buffer.println("REPORT GROUP BY DAY");
+            buffer.println(reportTitle);
             buffer.println("============================================================");
-            int cnt = 0;
-            for (String day : days) {
-                if (cnt++ == 50) break;
-                buffer.println("\n[ " + day + " " + getDayOfWeek(records, day) + " ]");
-                for (int i = 9; i < fields.size(); i++) {
+            for(var entry : filteredRecords.entrySet()){
+                type groupKey = entry.getKey();
+                List<Map<String, Object>> groupRecords = entry.getValue();
+                buffer.println("\n- " + formatter.apply(groupKey) + ":");
+                for(int i = 9; i < fields.size(); i++){
                     String field = fields.get(i);
-                    double average, minimum, maximum;
-                    List<Double> values = records.stream().filter(map -> {
-                        Object time = map.get("time");
-                        return time != null && time.toString().startsWith(day);
-                    }).map(map -> map.get(field)).filter(Objects::nonNull).map(val -> Double.parseDouble(val.toString())).toList();
-                    average = values.stream().reduce(Double::sum).orElse(0.0);
-                    average = values.isEmpty() ? average : average / values.size();
-                    minimum = values.stream().mapToDouble(Double::doubleValue).min().orElse(0.0);
-                    maximum = values.stream().mapToDouble(Double::doubleValue).max().orElse(0.0);
-                    buffer.println("\n\t[[ " + formatIdName(field) + " ]]");
-                    buffer.printf("    \t%-18s : %12.2f%n", "Avg. value", average);
-                    buffer.printf("    \t%-18s : %12.2f%n", "Max. value", maximum);
-                    buffer.printf("    \t%-18s : %12.2f%n", "Min. value", minimum);
-                }
-            }
-        } catch (Exception e) {
-            System.err.println("ERROR: " + e.getMessage());
-        }
-    }
+                    DoubleSummaryStatistics stats = groupRecords.stream()
+                            .map(map -> map.get(field))
+                            .filter(Objects::nonNull)
+                            .mapToDouble(value -> Double.parseDouble(value.toString()))
+                            .summaryStatistics();
+                    buffer.println("\n\t[ " + formatIdName(field) + " ]");
+                    buffer.printf(
+                            "    \tAvg : %8.2f | Max : %8.2f | Min : %8.2f%n",
+                            stats.getAverage(),
+                            stats.getMax(),
+                            stats.getMin()
+                    );
 
-    public static void getHourStatistics(List<String> fields, List<Map<String, Object>> records, List<String> hours) {
-        String fileName = "outputs/perHourStatistics.txt";
-        /*FIX: ONLY FOR 50 DIFFERENT HOURS or LESS*/
-        try (PrintWriter buffer = new PrintWriter(fileName)) {
-            buffer.println("============================================================");
-            buffer.println("REPORT GROUP BY HOUR");
-            buffer.println("============================================================");
-            int cnt = 0;
-            for (String hour : hours) {
-                if (cnt++ == 50) break;
-                buffer.println("\n[ " + hour + " ]");
-                for (int i = 9; i < fields.size(); i++) {
-                    String field = fields.get(i);
-                    double average, minimum, maximum;
-                    List<Double> values = records.stream().filter(map -> {
-                        Object time = map.get("time");
-                        return time != null && time.toString().substring(11, 16).equals(hour);
-                    }).map(map -> map.get(field)).filter(Objects::nonNull).map(val -> Double.parseDouble(val.toString())).toList();
-                    average = values.stream().reduce(Double::sum).orElse(0.0);
-                    average = values.isEmpty() ? average : average / values.size();
-                    minimum = values.stream().mapToDouble(Double::doubleValue).min().orElse(0.0);
-                    maximum = values.stream().mapToDouble(Double::doubleValue).max().orElse(0.0);
-                    buffer.println("\n\t[[ " + formatIdName(field) + " ]]");
-                    buffer.printf("    \t%-18s : %12.2f%n", "Avg. value", average);
-                    buffer.printf("    \t%-18s : %12.2f%n", "Max. value", maximum);
-                    buffer.printf("    \t%-18s : %12.2f%n", "Min. value", minimum);
-                }
-            }
-        } catch (Exception e) {
-            System.err.println("ERROR: " + e.getMessage());
-        }
-    }
-
-    public static void getLocationStatistics(List<String> fields, List<Map<String, Object>> records, List<String> locations) {
-        String fileName = "outputs/perLocationStatistics.txt";
-        /*FIX: ONLY FOR 50 DIFFERENT LOCATIONS or LESS*/
-        try (PrintWriter buffer = new PrintWriter(fileName)) {
-            buffer.println("============================================================");
-            buffer.println("REPORT GROUP BY LOCATION");
-            buffer.println("============================================================");
-            int cnt = 0;
-            for (String location : locations) {
-                if (cnt++ == 50) break;
-                buffer.println("\n[ " + location + " ]");
-                for (int i = 9; i < fields.size(); i++) {
-                    String field = fields.get(i);
-                    double average, minimum, maximum;
-                    List<Double> values = records.stream().filter(map -> {
-                        Object time = map.get("name");
-                        return time != null && time.toString().equals(location);
-                    }).map(map -> map.get(field)).filter(Objects::nonNull).map(val -> Double.parseDouble(val.toString())).toList();
-                    average = values.stream().reduce(Double::sum).orElse(0.0);
-                    average = values.isEmpty() ? average : average / values.size();
-                    minimum = values.stream().mapToDouble(Double::doubleValue).min().orElse(0.0);
-                    maximum = values.stream().mapToDouble(Double::doubleValue).max().orElse(0.0);
-                    buffer.println("\n\t[[ " + formatIdName(field) + " ]]");
-                    buffer.printf("    \t%-18s : %12.2f%n", "Avg. value", average);
-                    buffer.printf("    \t%-18s : %12.2f%n", "Max. value", maximum);
-                    buffer.printf("    \t%-18s : %12.2f%n", "Min. value", minimum);
                 }
             }
         } catch (Exception e) {
