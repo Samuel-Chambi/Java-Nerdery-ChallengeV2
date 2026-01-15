@@ -53,14 +53,14 @@ public class Challenges {
     public String[] circularArray(int index) {
         String[] COUNTRY_NAMES = {"Germany", "Norway", "Island", "Japan", "Israel"};
         index %= COUNTRY_NAMES.length;
-        String[] auxiliary_list = new String[COUNTRY_NAMES.length];
-        System.arraycopy(COUNTRY_NAMES, 0, auxiliary_list, 0, 5);
+        String[] auxilaryList = new String[COUNTRY_NAMES.length];
+        System.arraycopy(COUNTRY_NAMES, 0, auxilaryList, 0, 5);
         /*
          * For this challenge, I use the index argument as an offset between two pointers.
          * The first one (in AUX_LIST), will init in the index position while the second (in COUNTRY_NAMES) will init in position 0.
          * For manage the overflow in the first pointer, I use the modular operator to simulate the circular road.
          * */
-        for (int i = 0; i < COUNTRY_NAMES.length; i++) COUNTRY_NAMES[i] = auxiliary_list[(i + index) % COUNTRY_NAMES.length];
+        for (int i = 0; i < COUNTRY_NAMES.length; i++) COUNTRY_NAMES[i] = auxilaryList[(i + index) % COUNTRY_NAMES.length];
         return COUNTRY_NAMES;
     }
     /* *****
