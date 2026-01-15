@@ -24,14 +24,13 @@ public class Challenges {
     public String readableTime(Integer seconds) {
         // YOUR CODE HERE...
         // For this, firstly I get the number of hours from the seconds dividing it by 3600
-        String hh = (seconds / 3600 > 9) ? String.valueOf(seconds / 3600) : '0' + String.valueOf(seconds / 3600);
+        Integer hours = seconds / 3600;
         seconds %= 3600;
         // So, the rest after the division must belong to the minutes or seconds section, for get the number of minutes apply the same operation but now dividing by 60
-        String mm = (seconds / 60 > 9) ? String.valueOf(seconds / 60) : '0' + String.valueOf(seconds / 60);
+        Integer minutes = seconds / 60;
         seconds %= 60;
         // At the end, the rest after both operations belongs to the number of seconds.
-        String ss = (seconds > 9) ? String.valueOf(seconds) : '0' + String.valueOf(seconds);
-        return String.join(":", hh, mm, ss);
+        return String.format("%02d:%02d:%02d", hours, minutes, seconds);
     }
 
     /* *****
@@ -54,14 +53,14 @@ public class Challenges {
     public String[] circularArray(int index) {
         String[] COUNTRY_NAMES = {"Germany", "Norway", "Island", "Japan", "Israel"};
         index %= COUNTRY_NAMES.length;
-        String[] AUX_LIST = new String[5];
-        System.arraycopy(COUNTRY_NAMES, 0, AUX_LIST, 0, 5);
+        String[] auxiliary_list = new String[COUNTRY_NAMES.length];
+        System.arraycopy(COUNTRY_NAMES, 0, auxiliary_list, 0, 5);
         /*
          * For this challenge, I use the index argument as an offset between two pointers.
          * The first one (in AUX_LIST), will init in the index position while the second (in COUNTRY_NAMES) will init in position 0.
          * For manage the overflow in the first pointer, I use the modular operator to simulate the circular road.
          * */
-        for (int i = 0; i < COUNTRY_NAMES.length; i++) COUNTRY_NAMES[i] = AUX_LIST[(i + index) % COUNTRY_NAMES.length];
+        for (int i = 0; i < COUNTRY_NAMES.length; i++) COUNTRY_NAMES[i] = auxiliary_list[(i + index) % COUNTRY_NAMES.length];
         return COUNTRY_NAMES;
     }
     /* *****

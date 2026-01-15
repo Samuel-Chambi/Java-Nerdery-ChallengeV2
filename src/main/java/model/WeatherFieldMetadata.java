@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 // 'Jackson' will ignore fields that are not in the DTO
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class FieldMetadata {
+public class WeatherFieldMetadata {
     private String id;
     private String type;
 

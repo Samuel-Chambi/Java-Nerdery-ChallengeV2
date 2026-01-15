@@ -1,0 +1,38 @@
+============================================================
+STATISTICS - General
+============================================================
+
+- ALL:
+
+	[ Atmospheric pressure ]
+    	Avg :   101.47 | Max :   103.73 | Min :    98.42
+
+	[ Precipitation ]
+    	Avg :     0.01 | Max :    35.34 | Min :     0.00
+
+	[ Gust speed ]
+    	Avg :   -13.32 | Max :    24.01 | Min : -9990.00
+
+	[ Relative humidity ]
+    	Avg :    74.63 | Max :   100.00 | Min :    12.00
+
+	[ Vapour pressure ]
+    	Avg :     1.18 | Max :     2.88 | Min :     0.55
+
+	[ Strikes ]
+    	Avg :     0.04 | Max :   777.00 | Min :     0.00
+
+	[ Air temp ]
+    	Avg :    13.87 | Max :    45.30 | Min :    -0.60
+
+	[ Wind speed ]
+    	Avg :   -15.52 | Max :    13.04 | Min : -9990.00
+
+	[ Solar ]
+    	Avg :   115.60 | Max :  1119.00 | Min :     0.00
+
+	[ Strike distance ]
+    	Avg :     0.09 | Max :    40.00 | Min :     0.00
+
+	[ Wind direction ]
+    	Avg :   211.89 | Max :   360.00 | Min : -9990.00

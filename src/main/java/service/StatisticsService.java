@@ -11,16 +11,21 @@ import java.util.stream.Collectors;
 
 import static model.FilterKey.buildKey;
 
-
+/*
+* StatisticsService
+* In charge of Statistics calculation using DoubleSummaryStatistics class
+* */
 public class StatisticsService {
     private final List<WeatherRecord> records;
-    public StatisticsService(List<WeatherRecord> records){
+
+    public StatisticsService(List<WeatherRecord> records) {
         this.records = records;
     }
-    public Map<FilterKey, Map<String, DoubleSummaryStatistics>> getStatisticsBy(FilterType filterType){
+    /*Applying DRY principle for each filter (GENERAL, HOUR, DAY, LOCATION)*/
+    public Map<FilterKey, Map<String, DoubleSummaryStatistics>> getStatisticsBy(FilterType filterType) {
         return records.stream()
                 .collect(Collectors.groupingBy(
-                        r -> buildKey(filterType , r),
+                        r -> buildKey(filterType, r),
                         Collectors.flatMapping(
                                 r -> r.metrics().entrySet().stream(),
                                 Collectors.groupingBy(
